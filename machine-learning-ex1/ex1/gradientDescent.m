@@ -20,7 +20,7 @@ n=size(X,2);
 theta_now=zeros(n,1);
 val=X*theta-y;
 for i=1:n
-theta_now(i,1)=theta(i,1)- X(:,i)'*val*alpha/m;
+	theta_now(i,1)=theta(i,1)- X(:,i)'*val*alpha/m;
 end
 theta=theta_now;
 
